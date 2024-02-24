@@ -10,6 +10,13 @@ Vamos criar variáveis e objetos para representar diferentes tipos de dados rela
     email: do tipo string, representando o endereço de e-mail do usuário.
     isAtivo: do tipo boolean, representando se o usuário está ativo ou não.
 
+ */  
+    let nomeCompleto:string;
+    let idade: number;
+    let email: string;
+    let isAtivo: boolean;
+    
+  /*
 2 -Crie um objeto usuario com as seguintes propriedades:
 
     nome: string, representando o primeiro nome do usuário.
@@ -20,9 +27,28 @@ Vamos criar variáveis e objetos para representar diferentes tipos de dados rela
     telefone: string, representando o número de telefone do usuário (opcional).
     Em seguida, imprima todas as variáveis e propriedades do objeto usuario usando console.log.
 
-*/
+*/ 
+let Usuario: {
+    nome: string,
+    sobrenome:string,
+    idade: number,
+    contato: {
+        email: string,
+        telefone: string
+    };
+}
 
-
+Usuario = {
+    nome: "Eduardo",
+    sobrenome: "Albuquerque",
+    idade: 10,
+    contato: {
+        email: "edualbuq8@gmai.com",
+        telefone: '13131313'
+    }
+};
+Usuario.nome ="DUDU";
+console.log(Usuario);
 /*
 
 Exercício:
@@ -34,8 +60,11 @@ Precisamos armazenar informações sobre diferentes produtos disponíveis na loj
     nomeProduto: do tipo string, representando o nome de um produto.
     preco: do tipo number, representando o preço do produto.
     disponivel: do tipo boolean, representando se o produto está disponível em estoque ou não.
-
-
+*/
+let nomeProduto: string;
+let preço: string;
+let disponivel: string;
+/*
 02 - Crie um objeto produto com as seguintes propriedades:
 
     nome: string, representando o nome do produto.
@@ -45,3 +74,18 @@ Precisamos armazenar informações sobre diferentes produtos disponíveis na loj
     Em seguida, imprima todas as variáveis e propriedades do objeto produto usando console.log.
 
 */
+
+type Produto={
+    nome: string,
+    preço: number,
+    estoque: number,
+    categoria: string[]
+};
+
+let Pruduto1: Produto ={
+    nome: 'Fusca',
+    preço: 30.000,
+    estoque: 10,
+    categoria: ['ltz','turbo']
+};
+console.log(Produto1);
