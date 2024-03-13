@@ -4,7 +4,7 @@ class Gerente implements Funcionario {
         return 15000;
     }
     Cargo(): string{
-        console.log("Ja sou o Gerente");
+        return "Ja sou o Gerente";
     }
 }
 
@@ -13,6 +13,6 @@ class Desenvolvedor implements Funcionario{
     return 5000;
    }
    Cargo(): string{
-    console.log("Sou desenvolvedor junior");
+    return "Sou desenvolvedor junior";
    }
 }
