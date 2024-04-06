@@ -75,8 +75,7 @@ Exercício 1: Calculadora Simples
 Crie uma função chamada calculadora que recebe três parâmetros: 
 numero1 (um número), numero2 (um número) e operacao (uma string representando a operação a ser realizada: "soma", "subtracao", "multiplicacao" ou "divisao"). 
 A função deve retornar o resultado da operação entre numero1 e numero2.
-*/
-/*
+
 Resultado esperado:
 console.log(calculadora(5, 3, "soma")); // Saída esperada: 8
 console.log(calculadora(10, 2, "subtracao")); // Saída esperada: 8
@@ -101,36 +100,7 @@ switch(expression) {
 } 
 
 */
-/*
-function calculadora(numero1: number, numero2: number, operacao: string): number {
-    let resultado: number;
 
-    switch (operacao) {
-        case 'soma':
-            resultado = numero1 + numero2;
-            break;
-        case 'subtracao':
-            resultado = numero1 - numero2;
-            break;
-        case 'multiplicacao':
-            resultado = numero1 * numero2;
-            break;
-        case 'divisao':
-            resultado = numero1 / numero2;
-            break;
-        default:
-            console.log('Operação inválida');
-            resultado = NaN; // Retorna NaN para operações inválidas
-    }
-
-    return resultado;
-}
-
-console.log(calculadora(5, 3, 'soma')); // Saída esperada: 8
-console.log(calculadora(10, 2, 'subtracao')); // Saída esperada: 8
-console.log(calculadora(4, 5, 'multiplicacao')); // Saída esperada: 20
-console.log(calculadora(10, 2, 'divisao')); // Saída esperada: 5
-*/
 
 /*
 Exercício 2: Verificador de Palíndromo
@@ -148,18 +118,3 @@ let frase: string = "Ana"
 const fraseInverso = frase.split('').reverse().join('');
 
 */
-function verificarPalindromo(frase: string): boolean{
-    const fraseInverso = frase.split('').reverse().join('');
-
-    if (frase === fraseInverso)
-        return true;
-    else
-        return false;
-
-
-}
-
-console.log(verificarPalindromo("arara")); // Saída esperada: true
-console.log(verificarPalindromo("reviver")); // Saída esperada: true
-console.log(verificarPalindromo("banana")); // Saída esperada: false
-console.log(verificarPalindromo("reconhecer")); // Saída esperada: true
